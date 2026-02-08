@@ -2,10 +2,6 @@
 
 A full-stack e-commerce application built with React and Node.js, featuring a modern UI, responsive design, and complete shopping cart functionality.
 
-## 🚀 Live Demo
-
-[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=react)](https://your-demo-url.com)
-[![GitHub](https://img.shields.io/badge/GitHub-Repo-black?style=for-the-badge&logo=github)](https://github.com/Ubiquity89/Assignment4)
 
 ## ✨ Features
 
@@ -214,32 +210,7 @@ npm run dev
 - [ ] CI/CD pipeline
 - [ ] Performance optimization
 
-## 🤝 Contributing
 
-We welcome contributions! Please follow these steps:
-
-1. **Fork** the repository
-2. **Create** a feature branch: `git checkout -b feature/amazing-feature`
-3. **Commit** your changes: `git commit -m 'Add amazing feature'`
-4. **Push** to the branch: `git push origin feature/amazing-feature`
-5. **Open** a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **React Team** - For the amazing UI framework
-- **Express.js** - For the robust backend framework
-- **Unsplash** - For beautiful product images
-- **Docker** - For containerization technology
-
-## 📞 Contact
-
-- **GitHub**: [@Ubiquity89](https://github.com/Ubiquity89)
-- **Email**: your-email@example.com
-- **Project Link**: [https://github.com/Ubiquity89/Assignment4](https://github.com/Ubiquity89/Assignment4)
 
 ---
 
