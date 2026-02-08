@@ -26,8 +26,8 @@ const Cart = () => {
 
   if (items.length === 0) {
     return (
-      <div className="page">
-        <h1>Shopping Cart</h1>
+      <div className="page-card">
+        <h1 className="page-title">Shopping Cart</h1>
         <div className="empty-cart">
           <p>Your cart is empty.</p>
           <a href="/products" className="continue-shopping-button">
@@ -39,10 +39,10 @@ const Cart = () => {
   }
 
   return (
-    <div className="page">
+    <div className="page-card">
       <div className="cart-header">
-        <h1>Shopping Cart</h1>
-        <p className="cart-summary">
+        <h1 className="page-title">Shopping Cart</h1>
+        <p className="page-description">
           {totalItems} {totalItems === 1 ? 'item' : 'items'} in your cart
         </p>
       </div>
