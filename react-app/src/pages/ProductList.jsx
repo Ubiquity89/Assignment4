@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import { productService } from '../services/productService';
+import { useCart } from '../context/CartContext';
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const { addItem, isInCart, getItemQuantity } = useCart();
 
   useEffect(() => {
     fetchProducts();
@@ -25,8 +27,7 @@ const ProductList = () => {
   };
 
   const handleAddToCart = (product) => {
-    console.log('Added to cart:', product);
-    // TODO: Implement cart functionality
+    addItem(product);
   };
 
   if (loading) {
@@ -63,11 +64,14 @@ const ProductList = () => {
             <div className="product-info">
               <h3 className="product-name">{product.name}</h3>
               <p className="product-price">${product.price?.toFixed(2) || '0.00'}</p>
+              {isInCart(product.id) && (
+                <p className="item-quantity">In cart: {getItemQuantity(product.id)}</p>
+              )}
               <button 
                 className="add-to-cart-button"
                 onClick={() => handleAddToCart(product)}
               >
-                Add to Cart
+                {isInCart(product.id) ? 'Add Another' : 'Add to Cart'}
               </button>
             </div>
           </div>
